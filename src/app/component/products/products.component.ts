@@ -1,7 +1,7 @@
 import { CartService } from './../../service/cart.service';
 import { ApiService } from './../../service/api.service';
 import { Component, OnInit } from '@angular/core';
-
+//Products
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
@@ -16,7 +16,7 @@ export class ProductsComponent implements OnInit {
     private cartService : CartService) { }
 
   ngOnInit(): void {
-    this.api.getProduct()
+    this.api.getAllProduct()
     .subscribe(res=>{
       this.productList = res;
 
