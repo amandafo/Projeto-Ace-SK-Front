@@ -7,6 +7,7 @@ import {map} from 'rxjs/operators'
 })
 export class ApiService {
 
+  
   constructor(private http : HttpClient) { }
 
   getAllProduct(){
