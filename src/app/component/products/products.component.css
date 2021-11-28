@@ -20,8 +20,8 @@ h6{
 
 .item img {
     display: flex;
-    width: 110px;
-    height: 64px;
+    width: 70px;
+    height: 60px;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
@@ -35,6 +35,13 @@ h6{
     align-content: center;
 }
 
+.nome-marca {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .card-top container-fluid{
     display: flex;
     flex-direction: row;
@@ -43,8 +50,6 @@ h6{
     align-content: center;
     
 }
-
-
 
 .item a:hover {
     color: #CE1141;

@@ -10,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class ProductsComponent implements OnInit {
 
   public productList : any;
+  public filterCategory : any;
   searchKey: string = "";
   constructor(
     private api : ApiService,
@@ -19,8 +20,11 @@ export class ProductsComponent implements OnInit {
     this.api.getAllProduct()
     .subscribe(res=>{
       this.productList = res;
-
+      this.filterCategory = res;
       this.productList.forEach((a : any) => {
+        if(a.category === "men's clothing" || a.category === "women's clothing") {
+          a.category = "Nike"
+        }
         Object.assign(a,{quantity:1, total: a.price});
       });
     });
@@ -32,6 +36,15 @@ export class ProductsComponent implements OnInit {
 
   addToCart(item : any){
     this.cartService.addToCart(item);
+  }
+
+  filter(category: string) {
+    this.filterCategory = this.productList
+    .filter((a:any)=>{
+      if(a.category == category || category == '') {
+        return a;
+      }
+    })
   }
 
 }

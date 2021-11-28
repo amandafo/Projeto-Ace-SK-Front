@@ -20,15 +20,15 @@
 
   <header class="cabecalho">
     <img class="logo" src="/assets/images/logo.png" alt="Logo" href="#">
-    <h2 class="h2-logo" href="#">Ace Sneakers</h2>
+    <h2 routerLink="carousel" class="h2-logo" href="#">Ace Sneakers</h2>
     <div class="search">
         <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="  Procurar Produto">
     </div>
     <nav class="navbar">
         <ul class="ul-navbar">
-            <li class="ul-navbar"><a href="#">Home</a></li>
+            <li class="ul-navbar"><a routerLink="carousel">Home</a></li>
             <li class="ul-navbar"><a href="#">Sobre Nós</a></li>
-            <li class="ul-navbar"><a href="#">Produtos</a></li>
+            <li class="ul-navbar"><a routerLink="products">Produtos</a></li>
             <!-- <li class="ul-navbar"><a href="#">Carrinho</a></li> -->
             <!-- <li></li> -->
             <a routerLink="cart" class="carrinho">
