@@ -1,20 +1,41 @@
-<header>
+<!-- <header>
     <div class="navbar navbar-dark bg-primary shadow-sm">
         <div class="navbar-brand align-item-center d-flex">
-            <i style="font-size: 40px;" class="fas fa-shipping-fast">&nbsp;
-                
-            </i>
+
+            <img src="/assets/images/logo.png" class="logo">
+
             <strong style="font-size: 30px;">Ace Sneakers</strong>
             <div class="form-group">
                 <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="Procurar Produto">
             </div>
-            <span class="fas fa-search search-icon"></span>
-
-
+            
         </div>
         <button routerLink="cart" class="btn btn-primary">
             <i style="font-size: 30px;" class="fas fa-cart-plus"></i>
             <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
         </button>
     </div>
-  </header>
+  </header> -->
+
+
+  <header class="cabecalho">
+    <img class="logo" src="/assets/images/logo.png" alt="Logo" href="#">
+    <h2 class="h2-logo" href="#">Ace Sneakers</h2>
+    <div class="search">
+        <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="  Procurar Produto">
+    </div>
+    <nav class="navbar">
+        <ul class="ul-navbar">
+            <li class="ul-navbar"><a href="#">Home</a></li>
+            <li class="ul-navbar"><a href="#">Sobre Nós</a></li>
+            <li class="ul-navbar"><a href="#">Produtos</a></li>
+            <!-- <li class="ul-navbar"><a href="#">Carrinho</a></li> -->
+            <!-- <li></li> -->
+            <a routerLink="cart" class="carrinho">
+                <button  class="cart">
+                    Carrinho
+                <div style="font-size: 15px; padding: 5px; background-color: whitesmoke;" class="badge bg-danger">{{totalItem}}</div></button>
+            </a>
+        </ul>
+    </nav>
+</header>

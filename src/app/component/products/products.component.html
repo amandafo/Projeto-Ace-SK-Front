@@ -1,27 +1,29 @@
+<!-- LISTA COM AS MARCAS -->
 <div class="card-top container-fluid">
-    <div class="container d-flex">
+    <h3 style="text-align:center;">Aqui as marcas ó</h3>
+    <div class="container d-flex" id="container-produtos">
         <div class="item">
             <a>
                 <img src="/assets/images/AdidasYezzy 350 V2 - Zebra/YeezyZebra-1.png" alt="">
-                <h6>Produtos 0</h6>
+                <h6>Nike</h6>
             </a>
         </div>
         <div class="item">
            <a>
                <img src="/assets/images/Air Max 90 - Off White/AirMax1-OF-1.png" alt="">
-               <h6>Produtos 1</h6>
-           </a> 
+               <h6>Adidas</h6>
+           </a>
         </div>
         <div class="item">
             <a>
                 <img src="/assets/images/Nike Blazer Mid - Off White - Serena Willians/Blazer-Queen-1.png" alt="">
-                <h6>Produtos 2</h6>
+                <h6>Puma</h6>
             </a>
         </div>
         <div class="item">
             <a>
                 <img src="/assets/images/Nike Blazer Mid - Off White/Blazer-OF-1.png" alt="">
-                <h6>Produtos 3</h6>
+                <h6>OS MAIS TOPS</h6>
             </a>
         </div>
     </div>
@@ -33,11 +35,11 @@
             <div class="card col-md-3">
                 <!-- imagens dos produtos -->
                 <img src="{{item.image}}" alt="">  
-                <h5 style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100ch;">{{item.title}}</h5>
-                <!-- descriçao do produtos -->
-                <p style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100ch;">{{item.description}}</p>
-                <p><strong>Preço: </strong>R${{item.price}}</p>
-                <button class="btn btn-primary" (click)=addToCart(item)>Carrinho</button>
+                <h5 style="font-family: 'Overpass', sans-serif; font-weight: bold; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100ch;">{{item.title}}</h5>
+                <!-- descrição do produtos -->
+                <p style="font-family: 'Montserrat', sans-serif;white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100ch;">{{item.description}}</p>
+                <p style="font-family: 'Overpass', sans-serif; font-weight: bold;"><strong>Preço: </strong>R${{item.price}}</p>
+                <button class="btn btn-primary" (click)=addToCart(item) style="font-family: 'Overpass', sans-serif; font-weigth: bold; background-color:#CE1141; ">Carrinho</button>
             </div>
         </ng-container>
         

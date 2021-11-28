@@ -1,3 +1,4 @@
+<!-- SE TIVEREM PRODUTOS NO CARRINHO -->
 <ng-container *ngIf="product.length !=0">
     <div class="container">
         <div class="card-table">
@@ -5,7 +6,7 @@
                 <table class="table table-responsive">
                     <thead>
                         <tr>
-                            <th>Sr.No</th>
+                            <th>Número</th>
                             <th>Nome do Produto</th>
                             <th>Imagem do Produto</th>
                             <th>Descrição</th>
@@ -19,20 +20,19 @@
                         <tr *ngFor="let item of product; let i = index">
                             <td>{{i + 1}}</td>
                             <td>{{item.title}}</td>
-                            <td><img style="width: 120px;" src="{{item.image}}" alt=""></td>
-                            <td style="width: 25%;">{{item.description}}</td>
-                            <td style="width: 12%;">{{item.price}}</td>
-                            <td style="width: 12%;">{{item.quantity}}</td>
-                            <td style="width: 12%;">{{item.total}}</td>
+                            <td><img class="product-img" style="width: 120px;" src="{{item.image}}" alt=""></td>
+                            <td style="width: 25%; ">{{item.description}}</td>
+                            <td style="width: 12%; ">{{item.price}}</td>
+                            <td style="width: 12%; ">{{item.quantity}}</td>
+                            <td style="width: 12%; ">{{item.total}}</td>
                             <td>
                                 <button (click)="removeItem(item)" class="btn btn-danger"><i class="fas fa-trash"></i></button>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="buttons">
                             <td colspan="4"></td>
                             <td><button (click)="emptyCart()" class="btn btn-danger">Esvaziar Carrinho</button></td>
                             <td><button routerLink="/products" class="btn btn-primary">Comprar Mais</button></td>
-                            <td><button class="btn btn-success">Checkout</button></td>
                             <td><strong>Valor Total : R${{grandTotal}}</strong></td>
                         </tr>
                     </tbody>
@@ -42,7 +42,7 @@
     </div>
 </ng-container>
 
-
+<!-- SE NÃO TIVER PRODUTOS NO CARRINHO -->
 <ng-container *ngIf="product.length == 0">
     <div class="container">
         <div class="card">

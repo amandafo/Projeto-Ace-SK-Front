@@ -1,12 +1,106 @@
-.form-control {
-    border-radius: 3px;
-    width: 600px;
-    margin-left: 20px;
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1B1B1B;
+    font-family: 'Montserrat', sans-serif;
 }
-.search-icon {
-    position: absolute;
-    z-index: 10;
-    right: 50%;
-    top: 20px;
-    color: blue;
+
+/* CABEÇALHO */
+
+.logo{
+    display: flex;
+    max-width: 8%;
+    margin: 20px;
+    cursor: pointer;
+}
+
+li,
+a,
+button {
+    font-family: 'Overpass', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.h2-logo{
+    font-size: 30px;
+    color: whitesmoke;
+    font-weight: 500;
+    margin-left: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.h2-logo:hover{
+    color: #c9395d;
+    transition: all 0.3s eae 0s;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.ul-navbar {
+    list-style: none;
+}
+
+.ul-navbar li,
+button {
+    display: inline-block;
+    padding: 0px 20px;
+
+}
+
+.ul-navbar li a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.ul-navbar li a:hover {
+    color: #CE1141;
+}
+
+.icone-carrinho {
+    padding-left: 0.5rem;
+}
+
+.cart {
+    padding: 9px 25px;
+    background-color: #CE1141;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s eae 0s;
+
+}
+
+.cart:hover {
+    background-color: #c9395d;
+    transition: all 0.3s eae 0s;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    width: 400px;
+    border: 1px solid whitesmoke;
+    border-radius: 100%;
 }

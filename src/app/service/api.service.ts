@@ -10,7 +10,7 @@ export class ApiService {
   constructor(private http : HttpClient) { }
 //Get all the products on the back
   getAllProduct(){
-    return this.http.get<any>("http://localhost:8080/api/products")
+    return this.http.get<any>("https://fakestoreapi.com/products/")
     .pipe(map((res:any)=>{
       return res;
     }))
