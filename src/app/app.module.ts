@@ -10,7 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FilterPipe } from './shared/filter.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CarouselComponent } from './component/carousel/carousel.component';
-import { FooterComponent } from './shared/component/footer/footer.component';
+import { FooterComponent } from './component/footer/footer.component';
 
 @NgModule({
   declarations: [

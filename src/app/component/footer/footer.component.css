@@ -1,0 +1,46 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0;
+    background-color: #d2d2d2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.icone{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-f{
+    cursor: pointer;
+    width: 8%;
+    padding: 15px;
+}
+
+.links-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.link-a{
+    padding: 15px;
+    color: #CE1441;
+}
+
+
+.link-a:hover{
+    color: #880e2d;
+}
